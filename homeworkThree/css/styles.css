@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  height: 100%;
+  letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+footer h2 {
+  font-size: 20px;
+  color: #8b61c4;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 30px;
+  margin-right: 1300px;
+}
+footer h3 {
+  font-size: 15px;
+  color: #8b61c4;
+  margin-top: 12px;
+  margin-right: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: #8b61c4;
+  height: 68px;
+  width: 100%;
+}
+nav .crosby {
+  margin-right: 990px;
+  font-size: 25px;
+}
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #e2e2e2;
+  text-transform: uppercase;
+}
+
+.heroWrapper {
+  display: block;
+  background-image: linear-gradient(rgb(139, 97, 196), rgba(0, 0, 0, 0.4)), url(../images/nightPhoto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 820px;
+}
+.heroWrapper .crosbyInfo {
+  margin-left: 85px;
+  width: 80%;
+}
+.heroWrapper .crosbyInfo h1 {
+  font-size: 76px;
+  color: #e2e2e2;
+  font-weight: 800;
+  padding-top: 394px;
+  text-transform: lowercase;
+}
+.heroWrapper .crosbyInfo p {
+  color: #e2e2e2;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.heroWrapper .crosbyInfo a {
+  font-size: 30px;
+  background-color: #e2e2e2;
+  border: 2px solid #8b61c4;
+  border-radius: 50px;
+  color: #8b61c4;
+  text-decoration: none;
+  padding: 10px 45px;
+}
+
+.aboutWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 820px;
+}
+.aboutWrapper .photoContainer {
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/yucaDistro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutWrapper .aboutInfo {
+  width: 50%;
+  height: 100%;
+  padding: 0px 70px;
+  margin-top: 150px;
+}
+.aboutWrapper .aboutInfo h1 {
+  font-size: 42px;
+  margin-top: 89px;
+  text-align: center;
+}
+.aboutWrapper .aboutInfo p {
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 69px;
+  width: 80%;
+  text-align: center;
+}
+
+.productWrapper {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.productWrapper .productPhotos {
+  width: 50%;
+  height: 100%;
+  background-color: #e2e2e2;
+}
+.productWrapper .productPhotos .firstImage {
+  background-image: url(../images/designChart.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-top: 32px;
+  width: 536px;
+  height: 599px;
+  z-index: 1;
+  border-radius: 20px;
+  margin-left: 400px;
+  position: absolute;
+}
+.productWrapper .productPhotos .secondImage {
+  background-image: url(../images/yucaWeb.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  position: absolute;
+  border: 3px solid black;
+  border-radius: 50px;
+  margin-left: 80px;
+  margin-top: 440px;
+  width: 691px;
+  height: 351px;
+  z-index: 999;
+}
+.productWrapper .productEntries {
+  width: 50%;
+  height: 100%;
+}
+.productWrapper .productEntries .productBlock {
+  padding: 0px 70px;
+}
+.productWrapper .productEntries .productBlock h1 {
+  font-size: 32px;
+  margin-top: 80px;
+}
+.productWrapper .productEntries .productBlock p {
+  font-size: 20px;
+  margin-top: 32px;
+}
+
+.contactWrapper {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contactWrapper .inputWrapper {
+  width: 50%;
+  height: 100%;
+  padding: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.contactWrapper .inputWrapper h1 {
+  font-size: 42px;
+  margin-bottom: 108px;
+  color: #8b61c4;
+}
+.contactWrapper .inputWrapper p {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #8b61c4;
+}
+.contactWrapper .inputWrapper input {
+  width: 818px;
+  height: 68px;
+  margin-bottom: 15px;
+}
+.contactWrapper .inputWrapper button {
+  width: 168px;
+  height: 45px;
+  font-size: 22px;
+  color: #e2e2e2;
+  background-color: #8b61c4;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

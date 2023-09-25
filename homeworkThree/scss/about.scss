@@ -1,0 +1,36 @@
+.aboutWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 820px;
+    
+    .photoContainer{
+        width: 50%;
+        height: 100%;
+        background-image: url(../images/yucaDistro.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .aboutInfo{
+        width: 50%;
+        height: 100%;
+        padding: 0px 70px;
+        margin-top: 150px;
+
+        h1{
+            font-size: 42px;
+            margin-top: 89px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+            margin: 0 auto;
+            margin-top: 69px;
+            width: 80%;
+            text-align: center;
+        }
+    }
+}

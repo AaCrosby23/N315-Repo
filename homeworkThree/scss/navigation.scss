@@ -1,0 +1,64 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #8b61c4;
+    height: 68px;
+    width: 100%;
+
+    .crosby{
+        margin-right: 990px;
+        font-size: 25px;
+    }
+    
+    a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #e2e2e2;
+        text-transform: uppercase;
+    }
+}
+
+.heroWrapper{
+    display: block;
+    background-image: linear-gradient(rgba(139,97,196,1), rgba(0,0,0,0.4)), url(../images/nightPhoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; 
+    height: 820px;
+
+    .crosbyInfo{
+        margin-left: 85px;
+        width: 80%;
+
+
+        h1{
+            font-size: 76px;
+            color: #e2e2e2;
+            font-weight: 800;
+            padding-top: 394px;
+            text-transform: lowercase;
+        }
+
+        p{
+            color: #e2e2e2;
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        a{
+            font-size: 30px;
+            background-color: #e2e2e2;
+            border: 2px solid #8b61c4;
+            border-radius: 50px;
+            color: #8b61c4;
+            text-decoration: none;
+            padding: 10px 45px;
+            // margin-left: 100px;
+        }
+    }
+}
+

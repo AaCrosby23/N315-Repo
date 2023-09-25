@@ -1,0 +1,72 @@
+.productWrapper{
+    width: 100%;
+    // height: calc(100% - 98px);
+    height: 820px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    .productPhotos{
+        width: 50%;
+        height: 100%;
+        background-color: #e2e2e2;
+
+
+
+        .firstImage{
+            background-image: url(../images/designChart.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto;
+            margin-top: 32px;
+           
+            width: 536px;
+            height: 599px;
+            z-index: 1;
+            border-radius: 20px;
+            margin-left: 400px;
+            position: absolute;
+        }
+        .secondImage{
+            background-image: url(../images/yucaWeb.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto;
+            // margin-top: 61px;
+            position: absolute;
+            border: 3px solid black;
+            
+            border-radius: 50px;
+            margin-left: 80px;
+            margin-top: 440px;
+
+            width: 691px;
+            height: 351px;
+            z-index: 999;
+
+        }
+    }
+
+    .productEntries{
+        width: 50%;
+        height: 100%;
+
+        .productBlock{
+            padding: 0px 70px;
+
+            h1{
+                font-size: 32px;
+                // font-family: "arialBold";
+                margin-top: 80px;
+            }
+
+            p{
+                font-size: 20px;
+                margin-top: 32px;
+            }
+        }
+    }
+}

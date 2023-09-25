@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "sass": "^1.58.3"
+  },
+  "name": "midterm",
+  "description": "This is the N215 Midterm. You will need to clone this repo. Finish the assignment and upload this to Web 4 and submit it to the assignment.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TShelton41/midterm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TShelton41/midterm/issues"
+  },
+  "homepage": "https://github.com/TShelton41/midterm#readme"
+}
