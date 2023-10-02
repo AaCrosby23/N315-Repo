@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Aaron Crosby</div>
+      <div><a href="#" class="login">Login</a></div>
+    </nav>
+    <div id="app">
+      <h1>Sign Up Today!</h1>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+        incidunt iusto nulla corporis quas earum cum dolore! Facilis quaerat eum
+        asperiores, iusto eius enim beatae consectetur ad quos tempore
+        voluptatum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+        suscipit autem numquam nulla reprehenderit nostrum nobis, quos dolorem,
+        totam assumenda illo perferendis molestiae impedit similique vero
+        dolorum, ducimus voluptate explicabo!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+        assumenda ratione, obcaecati culpa eveniet harum vero vitae
+        exercitationem, distinctio minima pariatur. Eius in dignissimos quo
+        totam labore necessitatibus magni recusandae!
+      </p>
+    </div>
+
+    <div id="modal" class="hidden">
+      <div class="modalBackground close"></div>
+      <div id="modalContent" class="openModalContent">
+        <div class="close closeButton">X</div>
+        <div class="inputBox">
+          <h3>username:</h3>
+          <input type="text" name="name" id="name" placeholder="username" />
+        </div>
+        <div class="inputBox">
+          <h3>password:</h3>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="********"
+          />
+        </div>
+        <button id="submit">Login</button>
+      </div>
+      <div id="modalSuccess" class="hidden">
+        <h2>Logged In!</h2>
+      </div>
+    </div>
+    <script src="lib/jquery-3.7.1.js"></script>
+    <script type="module" src="model/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>
