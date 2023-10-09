@@ -9,5 +9,11 @@ Task:
 - You must show signed-in inside an alert or model when you click the submit button to log in.
 - Upload this to the Web 4 server and Github and submit the Github link to this project.
 
-Crosby Web4 Link:
+Crosby Web4 Link Homework 2:
+https://in-info-web4.informatics.iupui.edu/~aacrosby/N315/homeworkTwo/
+
+Crosby Web4 Link Homework 3:
+https://in-info-web4.informatics.iupui.edu/~aacrosby/N315/homeworkThree/
+
+Crosby Web4 Link Homework 4:
 https://in-info-web4.informatics.iupui.edu/~aacrosby/N315/homework4/
