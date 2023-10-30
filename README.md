@@ -17,3 +17,6 @@ https://in-info-web4.informatics.iupui.edu/~aacrosby/N315/homeworkThree/
 
 Crosby Web4 Link Homework 4:
 https://in-info-web4.informatics.iupui.edu/~aacrosby/N315/homework4/
+
+Crosby Web4 Link Homework 6:
+https://in-info-web4.informatics.iupui.edu/~aacrosby/N315/homework6/
