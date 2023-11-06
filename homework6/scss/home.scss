@@ -17,14 +17,24 @@
         margin-top: 230px;
         overflow: hidden;
 
-        .socialLinks{
-            
-            
+        .instaLink{
 
             img{
                 color: #393939;
                 width: 19px;
                 height: 19px;
+
+            }
+        }
+
+        .facebookLink{
+            margin-right: -250px;
+
+            img{
+                color: #393939;
+                width: 19px;
+                height: 19px;
+
             }
         }
         
@@ -118,7 +128,7 @@
 
         .jungleCookTag{
             margin-right: 105px;
-            background: url(../assets/images/logo.svg);
+            background: url(../assets/logo/logo.svg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;

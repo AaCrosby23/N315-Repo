@@ -23,6 +23,14 @@
   src: url(../assets/fonts/Lato-Regular.ttf);
 }
 @font-face {
+  font-family: LatoBlack;
+  src: url(../assets/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: LatoBlackItalic;
+  src: url(../assets/fonts/Lato-BlackItalic.ttf);
+}
+@font-face {
   font-family: LatoItalic;
   src: url(../assets/fonts/Lato-Italic.ttf);
 }
@@ -58,7 +66,15 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 230px;
   overflow: hidden;
 }
-.homePage footer .socialLinks img {
+.homePage footer .instaLink img {
+  color: #393939;
+  width: 19px;
+  height: 19px;
+}
+.homePage footer .facebookLink {
+  margin-right: -250px;
+}
+.homePage footer .facebookLink img {
   color: #393939;
   width: 19px;
   height: 19px;
@@ -137,7 +153,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .homePage nav .jungleCookTag {
   margin-right: 105px;
-  background: url(../assets/images/logo.svg);
+  background: url(../assets/logo/logo.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -160,6 +176,164 @@ h1, h2, h3, h4, h5, h6, p {
   .homePage nav .jungleCookTag {
     display: block;
   }
+}
+
+.loginPage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #FFD972;
+}
+.loginPage footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px 40px;
+  margin-top: 132px;
+  overflow: hidden;
+}
+.loginPage footer .instaLink img {
+  color: #393939;
+  width: 19px;
+  height: 19px;
+}
+.loginPage footer .facebookLink {
+  margin-right: -250px;
+}
+.loginPage footer .facebookLink img {
+  color: #393939;
+  width: 19px;
+  height: 19px;
+}
+.loginPage footer .footerPageLinks {
+  margin-left: 88px;
+  margin-right: 129px;
+}
+.loginPage footer .footerPageLinks a {
+  text-decoration: none;
+  color: #393939;
+  font-family: LatoItalic;
+  font-size: 15px;
+  margin-right: 26px;
+}
+.loginPage footer p {
+  font-size: 15px;
+  color: #393939;
+  text-decoration: none;
+  font-family: LatoItalic;
+}
+.loginPage nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 50px;
+}
+.loginPage nav a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: CaveatReg;
+  color: #000;
+}
+.loginPage nav .jungleCookTag {
+  margin-right: 105px;
+  background: url(../assets/logo/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 254px;
+  height: 55px;
+  margin-right: 405px;
+}
+.loginPage nav .loginButton {
+  background-color: #FFD972;
+  width: 158px;
+  height: 52px;
+  text-align: center;
+  border-radius: 50px;
+  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.16));
+}
+@media (max-width: 1175px) {
+  .loginPage nav a {
+    display: none;
+  }
+  .loginPage nav .jungleCookTag {
+    display: block;
+  }
+}
+.loginPage .loginContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.loginPage .loginContentContainer .loginHere {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 197px;
+}
+.loginPage .loginContentContainer .loginHere h1 {
+  font-family: LatoBlack;
+  font-size: 30px;
+  margin-bottom: 61px;
+}
+.loginPage .loginContentContainer .loginHere input {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 52px;
+  font-family: LatoRegular;
+  color: black;
+  border-bottom: 2px solid black;
+  width: 206px;
+  height: 17px;
+}
+.loginPage .loginContentContainer .loginHere #loginButton {
+  width: 209px;
+  height: 52px;
+  background-color: #FFD972;
+  border-bottom: none;
+  font-family: CaveatReg;
+  font-size: 25px;
+  border-radius: 50px;
+  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.16));
+}
+.loginPage .loginContentContainer .signUpHere {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 95px;
+}
+.loginPage .loginContentContainer .signUpHere h2 {
+  font-family: LatoItalic;
+  font-size: 12px;
+  margin-bottom: -1px;
+}
+.loginPage .loginContentContainer .signUpHere h1 {
+  font-family: LatoBlack;
+  font-size: 30px;
+  margin-bottom: 61px;
+}
+.loginPage .loginContentContainer .signUpHere input {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 52px;
+  font-family: LatoRegular;
+  color: black;
+  border-bottom: 2px solid black;
+  width: 250px;
+  height: 17px;
+}
+.loginPage .loginContentContainer .signUpHere #signUpButton {
+  width: 250px;
+  height: 52px;
+  background-color: #FFD972;
+  border-bottom: none;
+  font-family: CaveatReg;
+  font-size: 25px;
+  border-radius: 50px;
+  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.16));
 }
 
 /*# sourceMappingURL=styles.css.map */
