@@ -207,7 +207,6 @@ nav .loginButton {
 .loginPage {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background-color: #FFD972;
 }
 @media (max-width: 1175px) {
@@ -216,6 +215,11 @@ nav .loginButton {
   }
   .loginPage nav .jungleCookTag {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .loginPage .loginContentContainer {
+    flex-direction: column;
   }
 }
 .loginPage .loginContentContainer {
@@ -439,6 +443,87 @@ nav .loginButton {
   font-size: 25px;
   font-family: CaveatReg;
   cursor: pointer;
+}
+
+.browseRecipeContainer {
+  background: linear-gradient(rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../assets/images/recipe-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.browseRecipeContainer .browseContentContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.browseRecipeContainer .browseContentContainer h1 {
+  font-family: CaveatBold;
+  font-size: 25px;
+  margin-bottom: 52px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview img {
+  width: 300px;
+  height: 263px;
+  border-radius: 20px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation {
+  display: flex;
+  flex-direction: column;
+  width: 224px;
+  height: 263px;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 20px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation h2 {
+  font-family: LatoBlack;
+  font-size: 15px;
+  border-bottom: 2px solid #000000;
+  margin: 46px 46px 19.5px 46px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation p {
+  font-family: LatoRegular;
+  font-size: 9px;
+  margin: 0px 37.1px 0px 46.9px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation .timeContainer {
+  display: flex;
+  padding: 0 70px;
+  margin-top: 19.5px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation .timeContainer img {
+  width: 23px;
+  height: 24.46px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation .timeContainer h3 {
+  font-family: LatoRegular;
+  font-size: 10px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation .servingsContainer {
+  display: flex;
+  padding: 0 70px;
+  margin-top: 17px;
+  margin-bottom: 43.5px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation .servingsContainer img {
+  width: 23.43px;
+  height: 21.52px;
+}
+.browseRecipeContainer .browseContentContainer .recipeContainer .recipeOverview .recipeInformation .servingsContainer h3 {
+  font-family: LatoRegular;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

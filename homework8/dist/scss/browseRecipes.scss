@@ -1,0 +1,100 @@
+.browseRecipeContainer{
+    background: linear-gradient(rgba(167, 232, 189, .8),rgba(167, 232, 189, .8)), url(../assets/images/recipe-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    // overflow: hidden;
+    
+    .browseContentContainer{
+        display: flex;
+        align-items: center;
+        // justify-content: space-evenly;
+        flex-direction: column;
+        
+        
+        h1{
+           font-family: CaveatBold;
+           font-size: 25px;
+           margin-bottom: 52px;
+
+        }
+
+        .recipeContainer{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-rows: repeat(2, 2fr);
+
+            .recipeOverview{
+                display: flex;
+                overflow: hidden;
+                margin-bottom: 50px;
+                
+                img{
+                    width: 300px;
+                    height: 263px;
+                    border-radius: 20px;
+
+                }
+
+                .recipeInformation{
+                    display: flex;
+                    flex-direction: column;
+                    width: 224px;
+                    height: 263px;
+                    background-color: #fff;
+                    color: #000000;
+                    border-radius: 20px;
+
+                    h2{
+                        font-family: LatoBlack;
+                        font-size: 15px;
+                        border-bottom: 2px solid #000000;
+                        margin: 46px 46px 19.5px 46px;
+                    }
+
+                    p{
+                    font-family: LatoRegular;
+                    font-size: 9px;
+                    //    padding: 0 46px;
+                    margin: 0px 37.1px 0px 46.9px;
+
+                    }
+
+                    .timeContainer{
+                        display: flex;
+                        padding: 0 70px;
+                        margin-top: 19.5px;
+
+                        img{
+                            width: 23px;
+                            height: 24.46px;
+
+                        }
+                        h3{
+                            font-family: LatoRegular;
+                            font-size: 10px;
+                        }
+                    }
+                    .servingsContainer{
+                        display: flex;
+                        padding: 0 70px;
+                        margin-top: 17px;
+                        margin-bottom: 43.5px;
+                        
+                        img{
+                            width: 23.43px;
+                            height: 21.52px;
+
+                        }
+                        h3{
+                            font-family: LatoRegular;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
