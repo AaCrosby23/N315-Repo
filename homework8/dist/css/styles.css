@@ -34,6 +34,30 @@
   font-family: LatoItalic;
   src: url(../assets/fonts/Lato-Italic.ttf);
 }
+@font-face {
+  font-family: LatoLight;
+  src: url(../assets/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: LatoLightItalic;
+  src: url(../assets/fonts/Lato-LightItalic.ttf);
+}
+@font-face {
+  font-family: LatoBold;
+  src: url(../assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: LatoBoldItalic;
+  src: url(../assets/fonts/Lato-BoldItalic.ttf);
+}
+@font-face {
+  font-family: LatoThin;
+  src: url(../assets/fonts/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: LatoThinItalic;
+  src: url(../assets/fonts/Lato-ThinItalic.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +72,87 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px 40px;
+  margin-top: 192px;
+  overflow: hidden;
+}
+footer .instaLink img {
+  color: #393939;
+  width: 19px;
+  height: 19px;
+}
+footer .facebookLink {
+  margin-right: -250px;
+}
+footer .facebookLink img {
+  color: #393939;
+  width: 19px;
+  height: 19px;
+}
+footer .footerPageLinks {
+  margin-left: 88px;
+  margin-right: 129px;
+}
+footer .footerPageLinks a {
+  text-decoration: none;
+  color: #393939;
+  font-family: LatoItalic;
+  font-size: 15px;
+  margin-right: 26px;
+}
+footer p {
+  font-size: 15px;
+  color: #393939;
+  text-decoration: none;
+  font-family: LatoItalic;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 50px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: CaveatReg;
+  color: #000;
+}
+nav .jungleCookTag {
+  margin-right: 105px;
+  background: url(../assets/logo/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 254px;
+  height: 55px;
+  margin-right: 405px;
+}
+nav .loginButton {
+  background-color: #FFD972;
+  width: 158px;
+  height: 52px;
+  text-align: center;
+  border-radius: 50px;
+  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.16));
+}
+
+@media (max-width: 1175px) {
+  nav a {
+    display: none;
+  }
+  nav .jungleCookTag {
+    display: block;
+  }
+}
 .homePage {
   background: linear-gradient(rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../assets/images/hero.jpg);
   background-size: cover;
@@ -56,45 +161,6 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-.homePage footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 25px 40px;
-  margin-top: 230px;
-  overflow: hidden;
-}
-.homePage footer .instaLink img {
-  color: #393939;
-  width: 19px;
-  height: 19px;
-}
-.homePage footer .facebookLink {
-  margin-right: -250px;
-}
-.homePage footer .facebookLink img {
-  color: #393939;
-  width: 19px;
-  height: 19px;
-}
-.homePage footer .footerPageLinks {
-  margin-left: 88px;
-  margin-right: 129px;
-  margin-bottom: 20px;
-}
-.homePage footer .footerPageLinks a {
-  text-decoration: none;
-  color: #393939;
-  font-family: LatoItalic;
-  font-size: 15px;
-  margin-right: 26px;
-}
-.homePage footer p {
-  font-size: 15px;
-  color: #393939;
-  text-decoration: none;
-  font-family: LatoItalic;
 }
 .homePage .homeContentContainer {
   display: flex;
@@ -137,123 +203,12 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   margin-top: 65.5px;
 }
-.homePage nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 38px 50px;
-}
-.homePage nav a {
-  text-decoration: none;
-  font-size: 25px;
-  font-family: CaveatReg;
-  color: #000;
-}
-.homePage nav .jungleCookTag {
-  margin-right: 105px;
-  background: url(../assets/logo/logo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  width: 254px;
-  height: 55px;
-  margin-right: 405px;
-}
-.homePage nav .loginButton {
-  width: 158px;
-  height: 52px;
-  background-color: #FFD972;
-  text-align: center;
-  border-radius: 50px;
-  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.16));
-}
-@media (max-width: 1175px) {
-  .homePage nav a {
-    display: none;
-  }
-  .homePage nav .jungleCookTag {
-    display: block;
-  }
-}
 
 .loginPage {
   width: 100%;
   height: 100%;
   overflow: hidden;
   background-color: #FFD972;
-}
-.loginPage footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 25px 40px;
-  margin-top: 192px;
-  overflow: hidden;
-}
-.loginPage footer .instaLink img {
-  color: #393939;
-  width: 19px;
-  height: 19px;
-}
-.loginPage footer .facebookLink {
-  margin-right: -250px;
-}
-.loginPage footer .facebookLink img {
-  color: #393939;
-  width: 19px;
-  height: 19px;
-}
-.loginPage footer .footerPageLinks {
-  margin-left: 88px;
-  margin-right: 129px;
-}
-.loginPage footer .footerPageLinks a {
-  text-decoration: none;
-  color: #393939;
-  font-family: LatoItalic;
-  font-size: 15px;
-  margin-right: 26px;
-}
-.loginPage footer p {
-  font-size: 15px;
-  color: #393939;
-  text-decoration: none;
-  font-family: LatoItalic;
-}
-.loginPage nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 38px 50px;
-}
-.loginPage nav a {
-  text-decoration: none;
-  font-size: 25px;
-  font-family: CaveatReg;
-  color: #000;
-}
-.loginPage nav .jungleCookTag {
-  margin-right: 105px;
-  background: url(../assets/logo/logo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  width: 254px;
-  height: 55px;
-  margin-right: 405px;
-}
-.loginPage nav .loginButton {
-  background-color: #FFD972;
-  width: 158px;
-  height: 52px;
-  text-align: center;
-  border-radius: 50px;
-  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.16));
 }
 @media (max-width: 1175px) {
   .loginPage nav a {
@@ -340,6 +295,150 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 25px;
   border-radius: 50px;
   filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.16));
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app .formHolder {
+  width: 980px;
+  /* background-color: rgb(205, 205, 205); */
+  padding-top: 20px;
+  padding: 0 20px;
+}
+#app .formHolder h1 {
+  margin-top: 126px;
+  margin-bottom: 68px;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-family: CaveatBold;
+}
+#app .formHolder input {
+  display: block;
+  width: 100%;
+  margin-bottom: 91px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-left: 8px;
+  font-family: LatoLight;
+  font-size: 20px;
+}
+#app .formTop {
+  position: relative;
+}
+#app .formTop .imageBtn {
+  width: 110px;
+  height: 36.2px;
+  background-color: #EFA7A7;
+  border-radius: 50px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-family: CaveatReg;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  top: 6.4px;
+}
+#app .formIngredients, #app .formInstr {
+  margin-top: 100px;
+  position: relative;
+  /* width: 900px; */
+  /* background-color: antiquewhite; */
+}
+#app .formIngredients input, #app .formInstr input {
+  margin-bottom: 69.5px;
+}
+#app .formIngredients .addIngreBtn, #app .formInstr .addIngreBtn {
+  width: 32px;
+  height: 32px;
+  background-color: cadetblue;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  cursor: pointer;
+  /* top: 10px; */
+}
+#app .formIngredients .removeIngreBtn, #app .formInstr .removeIngreBtn {
+  width: 32px;
+  height: 32px;
+  background-color: cadetblue;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  right: 38px;
+  bottom: 8px;
+  cursor: pointer;
+  /* top: 10px; */
+}
+#app .formIngredients .addInstrBtn, #app .formInstr .addInstrBtn {
+  width: 32px;
+  height: 32px;
+  background-color: cadetblue;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  cursor: pointer;
+  /* top: 10px; */
+}
+#app .formIngredients .removeInstrBtn, #app .formInstr .removeInstrBtn {
+  width: 32px;
+  height: 32px;
+  background-color: cadetblue;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  cursor: pointer;
+  /* top: 10px; */
+}
+#app .formIngredients h2, #app .formInstr h2 {
+  font-family: LatoRegular;
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 134.5px;
+  margin-bottom: 40px;
+}
+#app .submit {
+  width: 422px;
+  height: 52px;
+  background-color: #EFA7A7;
+  border-radius: 50px;
+  color: #000000;
+  margin: 0 auto;
+  margin-top: 109px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: CaveatReg;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

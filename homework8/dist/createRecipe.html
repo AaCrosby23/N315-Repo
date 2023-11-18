@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="jungleCookTag"></a>
+      <a href="index.html">Home</a>
+      <a href="#">Browse</a>
+      <a href="#">Create Recipe</a>
+      <a href="login.html" class="loginButton">Login</a>
+    </nav>
+    <div id="app">
+      <div class="formHolder">
+        <h1>Hey Aaron, create your recipe!</h1>
+        <div class="formTop">
+          <div class="imageBtn">Attach Image</div>
+          <input id="imagePath" type="text" placeholder="Add Recipe Image" />
+          <input type="text" placeholder="Recipe Name" id="recipeName" />
+          <input type="text" placeholder="Recipe Description" id="recipeDesc" />
+          <input type="text" placeholder="Recipe Total Time" id="totalTime" />
+          <input
+            type="text"
+            placeholder="Recipe Serving Size"
+            id="servingSize"
+          />
+        </div>
+        <div class="formIngredients">
+          <div class="addIngreBtn">+</div>
+          <div class="removeIngreBtn">-</div>
+          <h2>Enter Ingredients:</h2>
+          <input type="text" placeholder="Ingredient #1" id="ingre0" />
+          <input type="text" placeholder="Ingredient #2" id="ingre1" />
+          <input type="text" placeholder="Ingredient #3" id="ingre2" />
+        </div>
+        <div class="formInstr">
+          <div class="addInstrBtn">+</div>
+          <h2>Enter Instructions:</h2>
+          <input type="text" placeholder="Instruction #1" id="instr0" />
+          <input type="text" placeholder="Instruction #2" id="instr1" />
+          <input type="text" placeholder="Instruction #3" id="instr2" />
+        </div>
+        <div class="submit">Create Recipe</div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright © 2019 The Jungle Cook</p>
+      <div class="footerPageLinks">
+        <a href="login.html">Login</a>
+        <a href="#">Recipes by Category</a>
+        <a href="#">Privacy and Copyright</a>
+        <a href="#">Create Recipe</a>
+        <a href="#">Your Recipes</a>
+      </div>
+
+      <a href="#" class="facebookLink"
+        ><img src="./assets/images/facebook.svg" alt=""
+      /></a>
+      <a href="#" class="instaLink"
+        ><img src="./assets/images/instagram.svg" alt=""
+      /></a>
+    </footer>
+
+    <script src="lib/jquery-3.7.1.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
